@@ -5,13 +5,14 @@ import Card from "./components/Card";
 import Scoreboard from "./components/Scoreboard";
 
 function App() {
+  // The two states, playerChoices and Score that will run the app.
   const [playerChoices, setPlayerChoices] = React.useState([]);
 
   const [score, setScore] = React.useState({
     currentScore: playerChoices.length,
     maxScore: 0,
   });
-
+  // State handling functions
   function handleScore() {
     if (score.currentScore > score.maxScore) {
       setScore((oldScore) => {
@@ -51,8 +52,9 @@ function App() {
       arr[j] = tempi;
     }
   }
-
+  // Shuffling the specs array (or whatever you choose the game to be about) before rendering them into cards.
   shuffle(specs);
+
   const cards = specs.map((espec) => {
     return (
       <Card

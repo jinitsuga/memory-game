@@ -1,5 +1,7 @@
 import React from "react";
 
+// Simple score tracking, passing the state through props - no need for more complexity here.
+
 export default function Scoreboard(props) {
   return (
     <div className="scoreboard">
