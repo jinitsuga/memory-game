@@ -1,4 +1,15 @@
+body {
+  background-color: rgba(26, 20, 20, 0.801);
+}
 img {
   height: 50px;
   width: 50px;
+}
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 90%;
 }
