@@ -7,8 +7,7 @@ export default function Card(props) {
     <div
       className="cardWrap"
       onClick={() => {
-        props.handleChoice(props.spec);
-        props.handleScore();
+        props.handleCard(props.spec);
       }}
     >
       <h2>{props.spec}</h2>

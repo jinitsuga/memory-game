@@ -29,14 +29,18 @@ function App() {
   }
 
   function handleChoice(spec) {
-    console.log(playerChoices);
     if (playerChoices.find((element) => element === spec)) {
       setPlayerChoices([]);
     } else {
       setPlayerChoices((oldChoices) => {
         return [...oldChoices, spec];
       });
+      console.log(playerChoices.length, playerChoices);
     }
+  }
+  function cardFunction(spec) {
+    handleChoice(spec);
+    handleScore();
   }
 
   //Shuffling function for the list of specs
@@ -61,8 +65,9 @@ function App() {
         spec={espec.spec}
         img={espec.img}
         key={espec.key}
-        handleChoice={handleChoice}
-        handleScore={handleScore}
+        handleCard={cardFunction}
+        // handleChoice={handleChoice}
+        // handleScore={handleScore}
       />
     );
   });

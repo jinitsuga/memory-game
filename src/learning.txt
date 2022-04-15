@@ -1,0 +1,15 @@
+Some notes / some of the things I learned or solidified during the making of this app!
+
+-Shuffling: came across the Fischer-Yates algorithm while browsing possible ways of shuffling the elements of an array. Found this (https://bost.ocks.org/mike/shuffle/) 
+great article about it and instantly applied it on the project! 
+
+-Thought about giving the Scoreboard component its own State to keep track of score, but there really
+seemed to be no need for that, so I ended up running that State in the App component as well and passing it to the Scoreboard through props. The main reason for this
+was that the Score state was going to be affected by the Card component (on clicks), and we don't exactly want a component's logic affecting a sibling component's State, 
+therefore it made much more sense to keep track of both States in the parent component (App)
+
+-Made it as generic as possible! I wasn't sure which topic (what the cards would show) to make the game about, so I just went with something that I could show to 
+some of my friends and have fun with, but the code really is generic enough for the topic to be easily changed without modifying it too much. In fact, the logic doesn't 
+need to be modified at all!
+
+If you read this, thank you and have fun tinkering with or playing my game :)

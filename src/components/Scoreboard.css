@@ -1,0 +1,20 @@
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.scoreWrapper {
+  color: rgb(206, 196, 183);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px;
+  border-radius: 6px;
+  border-color: rgb(206, 196, 183);
+  padding: 40px;
+}
